@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHOOL-WEBSITE</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Animate Css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.0/animate.min.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+        </script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- jQUESRY  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js">
+
+    </script>
+
+    <!-- Production version -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/lightbox2/dist/css/lightbox.min.css">
+
+    <title>Admission Form</title>
+
+    <!-- Style -->
+    <style>
+        .code {
+            box-shadow: 0px 0px 4px #00000025;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- begin header section-->
+    <header class="header">
+        <a href="#" class="logo">
+            <i class="fas fa-bus"></i> School Name
+        </a>
+
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="home.html">Home</a>
+            <div class="dropdown">
+                <a href="gallery.html">Gallery <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="gallery.html#event">Event</a>
+                    <a href="gallery.html#sports-day">Sports Day</a>
+                </div> 
+            </div>    
+            <div class="dropdown">
+                <a href="about.html">About <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="about.html#school-name">Mission</a>
+                    <a href="about.html#mission">Vision</a>
+                    <a href="about.html#our-teachers">Teachers</a>
+                    <a href="about.html#student-review">Reviews</a>
+                </div>
+            </div>
+            <a href="courses.html">Courses</a>
+            <a href="contact.html">Contact</a>
+            <a href="admission.html">Admission</a>
+        </nav>
+        
+
+        <div class="icons">
+            <div id="account-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+
+        </div>
+        
+    </header>
+
+
+    <!-- start account-form section -->
+    <div class="account-form">
+
+        <div id="close-form" class="fas fa-times"></div>
+
+        <div class="buttons">
+            <span class="btn active login-btn">Login</span>
+            <span class="btn register-btn">Register</span>
+        </div>
+        <form class="login-form active" action="">
+            <h3>Login now</h3>
+            <input type="email" placeholder="Enter your email" class="box">
+            <input type="password" placeholder="Enter your password" class="box">
+            <div class="flex">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">Remember me</label>
+                <a href="#">Forgot password</a>
+            </div>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+        <form class="register-form" action="">
+            <h3>register now</h3>
+            <input type="email" placeholder="Enter your email" class="box">
+            <input type="password" placeholder="Enter your password" class="box">
+            <input type="password" placeholder="Confirm your password" class="box">
+            <input type="submit" value="Register now" class="btn">
+        </form>
+    </div> 
+    <!-- end sccount-form section -->
+    <!-- end header section-->
+    <!-- Code Starting -->
+    <div class="code container py-4 my-4 border border-2 rounded">
+        <div class="container">
+            <center>
+                <h3>Admission Form</h3>
+            </center>
+            
+            
+            <label>
+                Eligibility Criteria
+                
+            </label>
+            <p> A. Pre Primary
+                To be eligible for admission, the child must fulfill the age limit specified below:
+                
+                For Pre Primary II, the child must have completed 3 years by 31st December 2023.
+                For Pre Primary III, the child must have completed 4 years by 31st December 2023.
+               </p>
+            <p> B. For Classes I to IX & XI
+                To be eligible for admission the student must qualify in the CPS Scholastic Assessment Tool (CPS-SAT) and satisfy the norms specified by the school.</p>
+        </div>
+
+        <form class="container">
+
+            <div class="row d-flex flex-sm-row-reverse align-content-center justify-sm-content-between">
+                <!-- Picture -->
+                <div class="col-sm-2 col-6 mx-auto m-sm-0 mb-3" id="picture">
+                    <div class="h-100 w-100 d-flex flex-column align-content-center border-1 border rounded">
+                        <!-- Image display area -->
+                        <img id="userImage" class="align-self-center h-50 w-75" style="object-fit: cover; display: none;">
+                        <!-- Custom trigger for file input -->
+                        <label for="imageInput" class="custom-file-upload align-self-center" style="margin-top: 10px; cursor: pointer;">
+                            Choose Image
+                        </label>
+                        <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                        <!-- Label -->
+                        <div class="align-self-center text-center">Image should be less than 500kb and 441px x 531px</div>
+                    </div>
+                </div>
+                
+                <script>
+                    document.getElementById('imageInput').addEventListener('change', function(event) {
+                        const reader = new FileReader();
+                        reader.onload = function(e) {
+                            const userImage = document.getElementById('userImage');
+                            userImage.src = e.target.result;
+                            userImage.style.display = 'block'; // Show the image
+                        };
+                        reader.readAsDataURL(event.target.files[0]);
+                    });
+                </script>
+                
+
+                <!-- 3 rows -->
+                <div class="col-sm-10 col-12">
+                    <!-- Name of children -->
+                    <div class="form-group mb-4">
+                        <label for="Childname">Name of Children</label>
+                        <input type="text" class="form-control" id="Childname" placeholder="Children's Name" required>
+                    </div>
+                    <!-- Mother Details start -->
+                    <div class="form-group">
+                        <label for="Childname">Name of Mother</label>
+                        <input type="text" class="form-control" id="Childname" placeholder="Mother's Name" required>
+                    </div>
+
+
+                    <!-- qualification  -->
+                    <div class="row mt-sm-0">
+                        <div class="form-group col-12 col-sm-6">
+                            <label for="Qualification">Qualification</label>
+                            <input type="text" class="form-control" id="Qualification" placeholder="Qualification">
+                        </div>
+                        <div class="form-group col-12 col-sm-6">
+                            <label for="Occupation">Occupation</label>
+                            <input type="text" class="form-control" id="Occupation" placeholder="Occupation">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-sm-5 col-12">
+                    <label for="Designation">Designation</label>
+                    <input type="text" class="form-control" id="Designation" placeholder="Designation">
+                </div>
+                <div class="form-group col-sm-5 col-12">
+                    <label for="Company">Company</label>
+                    <input type="text" class="form-control" id="Company" placeholder="Company">
+                </div>
+                <div class="form-group col-sm-2 col-12">
+                    <label for="income">Monthly Income</label>
+                    <input type="text" class="form-control" id="income" placeholder="Income">
+                </div>
+            </div>
+            <!-- Mother Details end -->
+
+            <!-- Father Details strat -->
+            <div class="father">
+                <div class="row">
+                    <div class="col-12">
+                        <label for="fname">Name of Father</label>
+                        <input type="text" class="form-control" id="fname" placeholder="Father's Name" required>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="form-group col-sm-6 col-12">
+                        <label for="Qualification">Qualification</label>
+                        <input type="text" class="form-control" id="Qualification" placeholder="Qualification">
+                    </div>
+                    <div class="form-group col-sm-6 col-12">
+                        <label for="Occupation">Occupation</label>
+                        <input type="text" class="form-control" id="Occupation" placeholder="Occupation">
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="form-group col-sm-5 col-12">
+                        <label for="Designation">Designation</label>
+                        <input type="text" class="form-control" id="Designation" placeholder="Designation">
+                    </div>
+                    <div class="form-group col-sm-5 col-12">
+                        <label for="Company">Company</label>
+                        <input type="text" class="form-control" id="Company" placeholder="Company">
+                    </div>
+                    <div class="form-group col-sm-2 col-12">
+                        <label for="income">Monthly Income</label>
+                        <input type="text" class="form-control" id="income" placeholder="Income" required>
+                    </div>
+                </div>
+            </div>
+            <!-- Father Details end -->
+
+            <!-- optional input -->
+            <div class="row d-flex justify-content-between">
+                <div class="form-group col-sm-4 col-12">
+                    <label for="nationality">Student Nationality</label>
+                    <input type="text" class="form-control" id="nationality" placeholder="e.g. India" required>
+                </div>
+                <div class="form-group col-sm-4 col-12">
+                    <label for="Disability">Type of Disability (if any)*</label>
+                    <input type="text" class="form-control" id="Disability" placeholder="">
+                </div>
+                <fieldset class="col-sm-3 form-group d-flex align-items-center">Only One Child &nbsp
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">No</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <!-- radio buttons for category and religion -->
+            <div class="radio-c-r row">
+                <!-- Category -->
+                <fieldset class="form-group col-sm-6 col-12" required>
+                    <div class="row">
+                        <legend class="col-form-label col-6 pt-0">Category:</legend>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="Category"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="category">
+                                    General
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="Category"
+                                    value="option2">
+                                <label class="form-check-label" for="category">
+                                    SC
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="Category"
+                                    value="option3">
+                                <label class="form-check-label" for="category">
+                                    ST
+                                </label>
+                            </div>
+                            <div class="form-check ">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="Category"
+                                    value="option4">
+                                <label class="form-check-label" for="category">
+                                    OBC
+                                </label>
+                            </div>
+                            <div class="d-sm-flex flex-sm-row">
+                                <div class="form-check col-sm-6">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="Category"
+                                        value="option3">
+                                    <label class="form-check-label" for="category">
+                                        Other(Please specify)
+                                    </label>
+                                </div>
+
+                                <input type="text" class="form-control col-sm-6 col-12 " id="Other-cetagory"
+                                    placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Religion -->
+
+                <fieldset class="form-group col-sm-6 col-12" required>
+                    <div class="row">
+                        <legend class="col-form-label col-6 pt-0">Religion:</legend>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1"
+                                    value="option1">
+                                <label class="form-check-label" for="Religion">
+                                    Hindu
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1"
+                                    value="option2">
+                                <label class="form-check-label" for="Religion">
+                                    Muslim
+                                </label>
+                            </div>
+                            <div class="form-check ">
+                                <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios3"
+                                    value="option4">
+                                <label class="form-check-label" for="Religion">
+                                    Christian
+                                </label>
+                            </div>
+                            <div class="d-sm-flex flex-sm-row">
+                                <div class="form-check col-sm-6">
+                                    <input class="form-check-input" type="radio" name="gridRadios1" id="Category"
+                                        value="option4">
+                                    <label class="form-check-label" for="category">
+                                        Other(Please specify)
+                                    </label>
+                                </div>
+                                <input type="text" class="form-control col-sm-6 col-12 " id="Other-cetagory"
+                                    placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <!-- Student Details -->
+
+            <!-- Dob -->
+            <div class="row mt-sm-3">
+                <div class="form-group col-sm-6  col-12 d-sm-flex flex-sm-row my-sm-auto">
+                    <label class="col-sm-4" for="birthplace">Date of Birth</label>
+                    <input type="Date" max="2021-3-31" min="1920-3-31" class="form-control  col-sm-8 col-12" id="dob"
+                        placeholder="Select Date" required>
+                </div>
+                <div class="col-sm-6 my-sm-auto">
+                    <input type="text" class="form-control" id="inlineFormInput" placeholder="In words" required>
+                </div>
+            </div>
+            <!-- row for dob and aadhar  -->
+            <div class="row">
+                <div class="form-group col-sm-3 col-12">
+                    <!---Check- check how bootstrap write their codes -->
+                    <label for="birthplace">Birth Place</label>
+                    <input type="text" class="form-control" id="birthplace" placeholder="e.g. Chennai" required>
+                </div>
+                <!-- Blood Group -->
+                <div class="form-group col-sm-4 col-12">
+                    <div class="">
+                        <label for="SelectClass">Blood group</label>
+                        <select class="form-control" id="SelectClass" required>
+                            <option selected value="">Select group</option>
+                            <option value="1">A+</option>
+                            <option value="2">A-</option>
+                            <option value="3">B+</option>
+                            <option value="4">B-</option>
+                            <option value="5">O+</option>
+                            <option value="6">O-</option>
+                            <option value="7">AB+</option>
+                            <option value="8">AB-</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Aadhar Number -->
+                <div class="form-group col-sm-6 col-12">
+                    <label for="aadharno">Aadhar no.</label>
+                    <input type="text" class="form-control" id="aadharno" placeholder="5515 xxxx xxxx" required>
+                </div>
+            </div>
+            <!-- Present Address -->
+            <div class="row form-group">
+                <div class="col-12">
+                    <label for="Presentadsress">Present Address</label>
+                    <input type="text" class="form-control" id="Presentadsress"
+                        placeholder="House no., street, block, sector ....." required>
+                </div>
+            </div>
+            <!-- row for mobile to email -->
+            <div class="row">
+                <div class="form-group col-sm-4">
+                    <label for="Mobile">Mobile</label>
+                    <input type="text" class="form-control" id="Mobile" placeholder="+91 xxxxx xxxxx" required>
+                </div>
+                <div class="form-group col-sm-4">
+                    <label for="phone">Phone</label>
+                    <input type="text" class="form-control" id="phone" placeholder="0172 xxxx xxxx">
+                </div>
+                <div class="form-group col-sm-4">
+                    <label>Email</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                        </div>
+                        <input type="text" class="form-control" id="dob" placeholder="Email">
+                    </div>
+                </div>
+            </div>
+            <!-- parmanent Address -->
+            <!---Check -->
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="tickaddress" checked required>
+                <label class="form-check-label" for="tickaddress">Tick if Parmanent Address is same as Present
+                    Address</label>
+            </div>
+            <div class="row form-group">
+                <div class="col-12">
+                    <label for="Parmanentadsress">Parmanent Address</label>
+                    <input type="text" class="form-control" id="Parmanentadsress"
+                        placeholder="House no., street, block, sector ....." disabled>
+                </div>
+            </div>
+            <!-- row mobile to email -->
+            <div class="row">
+                <div class="form-group col-12 col-sm-4">
+                    <label for="Mobile">Mobile</label>
+                    <input type="text" class="form-control" id="Mobile" placeholder="+91 xxxxx xxxxx" disabled required>
+                </div>
+                <div class="form-group col-12 col-sm-4">
+                    <label for="phone">Phone</label>
+                    <input type="text" class="form-control" id="phone" placeholder="0172 xxxx xxxx" disabled>
+                </div>
+                <div class="form-group col-sm-4">
+                    <label>Email</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                        </div>
+                        <input type="text" class="form-control" id="dob" placeholder="Email">
+                    </div>
+                </div>
+            </div>
+
+            <!-- table space here-->
+
+            <!-- row name of school to class -->
+            <div class="row">
+                <div class="form-group col-sm-8 col-12">
+                    <label for="nameofschool">Name of school</label>
+                    <input type="text" class="form-control" id="nameofschool" placeholder="" required>
+                </div>
+                <div class="form-group col-sm-4 col-12">
+                    <div class="">
+                        <label for="SelectClass">Select Class</label>
+                        <select class="form-control" id="SelectClass" required>
+                            <option selected value="">Choose...</option>
+                            <option value="1">Pre-nursery</option>
+                            <option value="2">Nursery</option>
+                            <option value="3">L.K.G</option>
+                            <option value="4">K.G</option>
+                            <option value="5">One</option>
+                            <option value="6">Two</option>
+                            <option value="7">Three</option>
+                            <option value="8">Four</option>
+                            <option value="9">Five</option>
+                            <option value="10">Six</option>
+                            <option value="11">Seven</option>
+                            <option value="12">Eight</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- row for sought and extra curiculum -->
+            <div class="row">
+                <div class="form-group col-sm-6 col-12">
+                    <div class="">
+                        <label for="SelectClass">Class to which admission sought</label>
+                        <select class="form-control" id="SelectClass" required>
+                            <option selected value="">Choose...</option>
+                            <option value="1">Pre-nursery</option>
+                            <option value="2">Nursery</option>
+                            <option value="3">L.K.G</option>
+                            <option value="4">K.G</option>
+                            <option value="5">One</option>
+                            <option value="6">Two</option>
+                            <option value="7">Three</option>
+                            <option value="8">Four</option>
+                            <option value="9">Five</option>
+                            <option value="10">Six</option>
+                            <option value="11">Seven</option>
+                            <option value="12">Eight</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group col-sm-6 col-12">
+                    <label for="nameofschool">Extra Curricular Activities and Acheiment</label>
+                    <input type="text" class="form-control" id="nameofschool"
+                        placeholder="e.g. Sport activities or others" required>
+                </div>
+            </div>
+            <!-- Document Attachment -->
+            <div class="row form-group col-12">
+                <label class="col-12" for="nameofschool">Attach Documents:</label>
+                <!-- Document -->
+                <div class="docs">
+                    <div class="row form-group m-2">
+                        <label class="file-label col-sm-6 col-12" for="tcCert">Transfer Certificate(TC)</label>
+                        <input type="file" class="col-sm-6 col-12" name="tcCert" accept="application/pdf">
+                    </div>
+                    <div class="row form-group m-2">
+                        <label class="file-label col-sm-6 col-12" for="dobCert">Birth Certificate</label>
+                        <input type="file" class="col-sm-6 col-12" name="dobCert" accept="application/pdf" required>
+                    </div>
+
+                    <div class="row form-group m-2">
+                        <label class="file-label col-sm-6 col-12" for="doc-ac">Aadhar Card</label>
+                        <input type="file" class="col-sm-6 col-12" name="acCert" accept="application/pdf" required>
+                    </div>
+                    
+                    <div class="row form-group m-2">
+                        <label class="file-label col-sm-6 col-12" for="doc-ps">Parent Signature</label>
+                        <input type="file" class="col-sm-6 col-12" name="psCert" accept="application/pdf" required>
+                    </div>
+                    <div class="row form-group m-2" x>
+                        <label class="form-label col-sm-6 col-12" for="doc-psh">Previous School History</label>
+                        <input type="file" class="col-sm-6 col-12" name="pshCert" accept="application/pdf">
+                    </div>
+                </div>
+                <!-- Document End -->
+            </div>
+            <!-- attach Document End -->
+
+            <!-- accept button -->
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="tickaddress" required>
+                <label class="form-check-label" for="tickaddress">
+                    I declare That all information given adove by me in
+                    the
+                    application form is true to my knowlegde. I declare that the date of birth and spelling of the name
+                    of
+                    my ward are correctly given in admission form. I have carefully read the rules and regulation of
+                    school
+                    and agree to abide by the same. I am Aware that registration is not a blinding towards admission.
+                </label>
+            </div>
+            <div class="row d-flex justify-content-center text-center">
+                <button class="btn btn-primary col-sm-4 col-8" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    
+    <!-- start of footer section -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-lightbulb"> School Name </i></h3>
+                <p>JK Tech Solutions, No.10 Vigneshwar Appartaments,Periyar Road - Chennai</p>
+                <div class="share">
+                    <a href="https://web.whatsapp.com/" class="fab fa-whatsapp"></a>
+                    <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                    <a href="https://twitter.com/x" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/?hl=en" class="fab fa-instagram"></a>
+                    <a href="https://www.linkedin.com/login" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="home.html" class="link">Home</a>
+                <a href="about.html" class="link">About</a>
+                <a href="courses.html" class="link">Courses</a>
+                <a href="contact.html" class="link">Contact</a>
+                <a href="admission.html" class="link">Admission</a>
+            </div>
+            
+
+            <div class="box">
+                <h3>useful links</h3>
+                <a href="#" class="link">Help Desk</a>
+                <a href="#" class="link">FAQs</a>
+                <a href="#" class="link">Send Feedback</a>
+                <a href="#" class="link">Privacy Policy</a>
+            </div>
+
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter</p>
+                <form action="">
+                    <input type="email" name="" placeholder="Enter your Email" id="" class="email">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+            </div>
+        </div>
+
+        <div class="credit">all rights reserved</div>
+    </section>
+    <!-- end of footer section -->
+
+
+
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+   <!-- js file link --> 
+   <script src="js/script.js"></script>
+</body>
+
+</html> 

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>SCHOOL-WEBSITE</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+     <!-- swiper css link -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <!-- begin header section-->
+    <header class="header">
+        <a href="#" class="logo">
+            <i class="fas fa-lightbulb"></i> School Name
+        </a>
+
+        
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="home.html">Home</a>
+            <div class="dropdown">
+                <a href="gallery.html">Gallery <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="gallery.html#event">Event</a>
+                    <a href="gallery.html#sports-day">Sports Day</a>
+                </div> 
+            </div>    
+            <div class="dropdown">
+                <a href="about.html">About <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="about.html#school-name">Mission</a>
+                    <a href="about.html#mission">Vision</a>
+                    <a href="about.html#our-teachers">Teachers</a>
+                    <a href="about.html#student-review">Reviews</a>
+                </div>
+            </div>
+            <a href="courses.html">Courses</a>
+            <a href="contact.html">Contact</a>
+            <div class="dropdown">
+              <a href="admission.html">Admission <i class="fa fa-caret-down"></i></a>
+              <div class="dropdown-content">
+                <a href="admissionform.html">Admission Form</a>
+              </div> 
+          </nav>
+        <div class="icons">
+            <div id="account-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    </header>
+
+
+    <!-- start account-form section -->
+    <div class="account-form">
+
+        <div id="close-form" class="fas fa-times"></div>
+
+        <div class="buttons">
+            <span class="btn active login-btn">Login</span>
+            <span class="btn register-btn">Register</span>
+        </div>
+        <form class="login-form active" action="">
+            
+            <h3>Login now</h3>
+            <input type="email" placeholder="Enter your email" class="box">
+            <input type="password" placeholder="Enter your password" class="box">
+            <div class="flex">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">Remember me</label>
+                <a href="#">Forgot password</a>
+            </div>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+        <form class="register-form" action="">
+            <h3>register now</h3>
+            <input type="email" placeholder="Enter your email" class="box">
+            <input type="password" placeholder="Enter your password" class="box">
+            <input type="password" placeholder="Confirm your password" class="box">
+            <input type="submit" value="Register now" class="btn">
+        </form>
+    </div> 
+    <!-- end account-form section -->
+    <!-- end header section-->
+
+    <section class="heading-link">
+
+        <h3>About Us</h3>
+        <p><a href="home.html">Home</a> / About</p>
+
+    </section>
+
+    <!-- start of about section -->
+
+    <section class="about">
+
+        <div class="image">
+            <img src="images/Study abroad.gif" alt="">
+        </div>
+
+        <div class="content">
+            <h3 class="about-title" id="school-name">School Name.</h3>
+            <p>
+                School Name is a community of learners including students, 
+                parents and staff who are dedicated to creating an academically rigorous, 
+                culturally caring and inclusive learning environment. We are Reaching 
+                Excellence in Academics and Changing History!
+            </p>
+        
+            <h3 class="about-title" id="mission">Mission.</h3>
+            <p>
+                Empowering students with holistic, inclusive education to foster academic excellence, 
+                creativity, and compassionate global citizenship. Cultivating a nurturing environment that encourages lifelong learning, 
+                innovation, and social responsibility.
+            </p>
+        
+            <h3 class="about-title" id="vision">Our School Vision.</h3>
+            <p>
+                To be a beacon of transformative education, inspiring students to achieve their fullest potential while shaping a better, 
+                more equitable world. Envisioning a future where every learner emerges as a leader, innovator, and contributor to global progress.
+            </p>
+            <div class="icons-container">
+                <div class="icons">
+                    <img src="images/about-icon-1.png" alt="">
+                    <h3>100+</h3>
+                    <span>Teachers</span>
+                </div>
+
+                <div class="icons">
+                    <img src="images/about-icon-2.png" alt="">
+                    <h3>200+</h3>
+                    <span>Awards</span>
+                </div>
+          
+                <div class="icons">
+                    <img src="images/about-icon-3.png" alt="">
+                    <h3>12,00+</h3>
+                    <span>Students</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- start of about section -->
+
+
+    <!-- start of teacher's section -->
+    
+    <section class="teachers" id="our-teachers">
+        <h1 class="heading">Our Teachers</h1>
+
+        <div class="swiper teachers-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/teacher-1.png" alt="">
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>xxx</h3>
+                        <span>English Tutor</span>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/teacher-2.png" alt="">
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>xxx</h3>
+                        <span>Chemistry Tutor</span>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/teacher-3.png" alt="">
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>xxx</h3>
+                        <span>Mathematics Tutor</span>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/teacher-4.png" alt="">
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>xxx</h3>
+                        <span>Dancing Tutor</span>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/teacher-5.png" alt="">
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>xxx</h3>
+                        <span>Sciences Tutor</span>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/teacher-6.png" alt="">
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>xxxx</h3>
+                        <span>Language Tutor</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end of teacher's section -->
+
+ 
+    <!-- start of student review section -->
+
+    <section class="reviews" id="student-review">
+        <h1 class="heading">Parent's Reviews</h1>
+
+        <div class="swiper reviews-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <p>
+                        School Name has the best mentors that hold your hand and guide
+                        you through the curriculum and advice you every step of the way.<br/>
+                        I am happy that I was able to get such a great experince.
+                    </p>
+                    <img src="images/pic-1.jpeg" alt="">
+                    <h3>Xxxx</h3>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>
+                        Being a culinary arts student at School Name was such a great opportunity for me, 
+                        I was able to work with the best mentors and have one on one sessions with
+                        some of the greatest chef ever known to the world enabling me to learn so much 
+                        from them.
+                    </p>
+                    <img src="images/pic-2.png" alt="">
+                    <h3>xxxx</h3>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>
+                        I graduated from School Name as a business student and i was able to land myself
+                        an internship after afew weeks.<br/>
+                        School Name is not just a learning institute but also a safe space for all of it's students.
+                    </p>
+                    <img src="images/pic-3.jpeg" alt="">
+                    <h3>xxxxx</h3>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>
+                        I joined the Software Engineering program at School Name and I was lucky to be one 
+                        of the top in my module and I ended up being a mentor at School Name, life has never 
+                        been the same for me since then. I really enjoy my work here at School Name.
+                    </p>
+                    <img src="images/pic-4.png" alt="">
+                    <h3>xxxx</h3>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>
+                       After School Name I was able to open my own dance studio and I am able to share what 
+                       I learnt in School Name to the world.
+                       I am really greatful to my mentors who were able to walk with me every step of the way.  
+                    </p>
+                    <img src="images/pic-5.jpeg" alt="">
+                    <h3>xxxx</h3>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>
+                        When I first joined School Name I was abit overwhelmed because I had left my country to join the medicine course.
+                        I was happy to see that there was diversity in the school and see people from different parts of the country
+                        all in one place. 
+                    </p>
+                    <img src="images/pic-6.png" alt="">
+                    <h3>xxxx</h3>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+
+                </div>
+
+            </div> 
+
+        </div>
+
+    </section>
+
+    <!-- end of student review section -->
+
+
+
+
+    <!-- start of footer section -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-lightbulb"> School Name</i></h3>
+                <p>JK Tech Solutions, No.10 Vigneshwar Appartaments,Periyar Road - Chennai</p>
+
+                <div class="share">
+                    <a href="https://web.whatsapp.com/" class="fab fa-whatsapp"></a>
+                    <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                    <a href="https://twitter.com/x" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/?hl=en" class="fab fa-instagram"></a>
+                    <a href="https://www.linkedin.com/login" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="home.html" class="link">Home</a>
+                <a href="about.html" class="link">About</a>
+                <a href="courses.html" class="link">Courses</a>
+                <a href="contact.html" class="link">Contact</a>
+                <a href="admission.html" class="link">Admission</a>
+            </div>
+
+            <div class="box">
+                <h3>useful links</h3>
+                <a href="#" class="link">Help Desk</a>
+                <a href="#" class="link">FAQs</a>
+                <a href="#" class="link">Send Feedback</a>
+                <a href="#" class="link">Privacy Policy</a>
+            </div>
+
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter</p>
+                <form action="">
+                    <input type="email" name="" placeholder="Enter your Email" id="" class="email">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+            </div>
+        </div>
+
+        <div class="credit">all rights reserved</div>
+    </section>
+    <!-- end of footer section -->
+
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+   <!-- js file link --> 
+   <script src="js/script.js"></script>
+</body>
+</html>

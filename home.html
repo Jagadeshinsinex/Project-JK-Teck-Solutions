@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHOOL-WEBSITE</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+</head>
+<body>
+    <!-- begin header section-->
+    <header class="header">
+        <a href="#" class="logo">
+            <i class="fas fa-bus"></i> School Name
+        </a>
+
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="home.html">Home</a>
+            <div class="dropdown">
+                <a href="gallery.html">Gallery <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="gallery.html#event">Event</a>
+                    <a href="gallery.html#sports-day">Sports Day</a>
+                </div> 
+            </div>    
+            <div class="dropdown">
+                <a href="about.html">About <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="about.html#school-name">Mission</a>
+                    <a href="about.html#mission">Vision</a>
+                    <a href="about.html#our-teachers">Teachers</a>
+                    <a href="about.html#student-review">Reviews</a>
+                </div>
+            </div>
+            <a href="courses.html">Courses</a>
+            <a href="contact.html">Contact</a>
+            <div class="dropdown">
+              <a href="admission.html">Admission <i class="fa fa-caret-down"></i></a>
+              <div class="dropdown-content">
+                <a href="admissionform.html">Admission Form</a>
+              </div> 
+          </nav>
+        
+
+        <div class="icons">
+            <div id="account-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+
+        </div>
+        
+    </header>
+
+
+    <!-- start account-form section -->
+    <div class="account-form">
+
+        <div id="close-form" class="fas fa-times"></div>
+
+        <div class="buttons">
+            <span class="btn active login-btn">Login</span>
+            <span class="btn register-btn">Register</span>
+        </div>
+     <!-- Updated form with action and method attributes for backend integration -->
+     <form class="login-form active" action="http://localhost:3000/login" method="post">
+            <h3>Login now</h3>
+            <input type="email" placeholder="Enter your email" class="box">
+            <input type="password" placeholder="Enter your password" class="box">
+            <div class="flex">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">Remember me</label>
+                <a href="#">Forgot password</a>
+            </div>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+     <form class="register-form" action="http://localhost:3000/register" method="post">
+            <h3>register now</h3>
+            <input type="email" placeholder="Enter your email" class="box">
+            <input type="password" placeholder="Enter your password" class="box">
+            <input type="password" placeholder="Confirm your password" class="box">
+            <input type="submit" value="Register now" class="btn">
+        </form>
+    </div> 
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const loginForm = document.querySelector(".login-form");
+        
+            loginForm.addEventListener("submit", function(e) {
+                e.preventDefault(); // Prevent default form submission
+        
+                const formData = new FormData(loginForm);
+                const data = {};
+                formData.forEach((value, key) => {data[key] = value;});
+                
+                // Use fetch to send the data to your server
+                fetch("http://localhost:3000/login", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(data),
+                })
+                .then(response => response.json()) // Assuming the server responds with JSON
+                .then(data => {
+                    if(data.success) {
+                        // Assuming your server response contains a field indicating success
+                        // Now, update the webpage to show the profile or a success message
+                        document.querySelector(".account-form").innerHTML = `<p>Welcome, ${data.email}!</p>`; // Customize as needed
+                    } else {
+                        // Handle login failure (e.g., show an error message)
+                        alert("Login failed: " + data.message); // Customize as needed
+                    }
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                });
+            });
+        });
+        </script>
+        
+    <!-- end sccount-form section -->
+    <!-- end header section-->
+
+    <!-- start of home section -->
+    <section class="home">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <section class="swiper-slide" style="background: url(images/solid-concrete-wall-textured-backdrop.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>A revolutionary way to educate.</h3>
+                        <p>
+                            Here at (School Name) we are focused on creating a new way for our students to learn. 
+                            We support a community schools approach that organizes and maximizes resources 
+                            from the school and community based partnerships to ensure every student thrives and to 
+                            support student success in alignment with the school priorities. 
+                        </p>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-youtube fa-5x"></i>
+                        </a>
+                        
+                    </div>            
+                </section>
+
+                <section class="swiper-slide" style="background: url(images/solid-concrete-wall-textured-backdrop.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>A Family Of Learning.</h3>
+                        <p>The administration and staff are committed to providing a challenging and supportive learning 
+                            environment where all students can succeed and reach their full potential. Every member 
+                            participates in cycles of continuous learning and improvement that includes establishing 
+                            high expectations, goal setting, planning, action and reflection.
+                            We offer staff professional development training to build teachers capacity to 
+                            improve instructional practices.
+                        </p>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-youtube fa-5x"></i>
+                    </div>            
+                </section>
+
+                <section class="swiper-slide" style="background: url(images/solid-concrete-wall-textured-backdrop.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>A Partnership In Discovery</h3>
+                        <p>Through discovery, exploration, innovation, and creative expression through Arts integration 
+                            and after school enrichment opportunities, students receive rich, extended learning opportunities 
+                            while building a positive school culture where every member feels valued and respected.
+                        </p>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-youtube fa-5x"></i>
+                        </a>    
+                    </div>            
+                </section>
+
+            </div>
+
+            <!-- Add these lines for navigation arrows -->
+        <div class="swiper-button-next"></div> 
+        <div class="swiper-button-prev"></div>
+
+    </div>
+</section>
+
+    <!-- end of home section -->
+
+    <!-- start of subject section -->
+
+    <section class="subjects">
+        <h1 class="heading">Our Extracurricular Activity</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/subject-icon-1.png" alt="">
+                <h3><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Arts & Design</a></h3>
+            </div>
+            
+
+            <div class="box">
+                <img src="images/subject-icon-2.png" alt="">
+                <h3><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Abacus</a></h3>
+                
+            </div>
+
+            <div class="box">
+                <img src="images/subject-icon-3.png" alt="">
+                <h3><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Teaching</a></h3>
+                
+            </div>
+
+            <div class="box">
+                <img src="images/subject-icon-4.png" alt="">
+                <h3><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Development</a></h3>
+                
+            </div>
+
+            <div class="box">
+                <img src="images/subject-icon-5.png" alt="">
+                <h3><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Sciences</a></h3>
+            </div>
+
+            <div class="box">
+                <img src="images/sports.png" alt="">
+                <h3><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Sports</a></h3>
+               
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end of subect section -->
+
+    <!-- start of home courese slider section -->
+    
+    <section class="home-courses">
+
+        <h1 class="heading">Popular Subjects</h1>
+
+        <div class="swiper home-course-slider">
+
+            <div class="swiper-wrapper">
+    <div class="swiper home-course-slider"></div>
+                <div class="swiper-slide slide">
+
+                    <div class="image">
+                        <img src="images/course-1-1.svg" alt="">
+                        <h3>Medicine</h3>
+                    </div>
+
+                    <div class="content">
+                        <h3>Medicine</h3>
+                        <p>Wherever the art of medicine is loved, there is also a love for humanity. </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                    
+                </div>
+
+                <div class="swiper-slide slide">
+
+                    <div class="image">
+                        <img src="images/course-1-2.svg" alt="">
+                        <h3>Computer Science</h3>
+                    </div>
+
+                    <div class="content">
+                        <h3>Information technology</h3>
+                        <p>Learn and get accustomed to technology as it advances. </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                    
+                </div>
+
+                <div class="swiper-slide slide">
+
+                    <div class="image">
+                        <img src="images/Teaching.gif" alt="">
+                        <h3>Teaching</h3>
+                    </div>
+
+                    <div class="content">
+                        <h3>Teaching</h3>
+                        <p>An educated mind can teach many and change lives. </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                    
+                </div>
+
+                <div class="swiper-slide slide">
+
+                    <div class="image">
+                        <img src="images/course-1-4.svg" alt="">
+                        <h3>Culinary Arts</h3>
+                    </div>
+
+                    <div class="content">
+                        <h3>Culinary Arts</h3>
+                        <p>With top of the state facilities we will be sure to procude the best chefs . </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                    
+                </div>
+
+                <div class="swiper-slide slide">
+
+                    <div class="image">
+                        <img src="images/course-1-5.svg" alt="">
+                        <h3>Business</h3>
+                    </div>
+
+                    <div class="content">
+                        <h3>Business</h3>
+                        <p>Business opportunities are like buses, there's always another one coming. </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                    
+                </div>
+
+                <div class="swiper-slide slide">
+
+                    <div class="image">
+                        <img src="images/course-1-6.svg" alt="">
+                        <h3>Robatics</h3>
+                    </div>
+
+                    <div class="content">
+                        <h3>Robatics</h3>
+                        <p>Why play with sportsballs when you can play with robots? </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of home courese slider section -->
+    
+    <!-- start of footer section -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-lightbulb"> School Name </i></h3>
+                <p>JK Tech Solutions, No.10 Vigneshwar Appartaments,Periyar Road - Chennai</p>
+                <div class="share">
+                    <a href="https://web.whatsapp.com/" class="fab fa-whatsapp"></a>
+                    <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                    <a href="https://twitter.com/x" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/?hl=en" class="fab fa-instagram"></a>
+                    <a href="https://www.linkedin.com/login" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="home.html" class="link">Home</a>
+                <a href="about.html" class="link">About</a>
+                <a href="courses.html" class="link">Courses</a>
+                <a href="contact.html" class="link">Contact</a>
+                <a href="admission.html" class="link">Admission</a>
+            </div>
+            
+
+            <div class="box">
+                <h3>useful links</h3>
+                <a href="#" class="link">Help Desk</a>
+                <a href="#" class="link">FAQs</a>
+                <a href="#" class="link">Send Feedback</a>
+                <a href="#" class="link">Privacy Policy</a>
+            </div>
+
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter</p>
+                <form action="">
+                    <input type="email" name="" placeholder="Enter your Email" id="" class="email">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+            </div>
+        </div>
+
+        <div class="credit">all rights reserved</div>
+    </section>
+    <!-- end of footer section -->
+
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+   <!-- js file link --> 
+   <script src="js/script.js"></script>
+
+</body>
+</html>

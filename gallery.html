@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="gallerycss/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="gallerycss/styles.css">
+
+        <!-- css link -->
+     <link rel="stylesheet" href="css/style.css">
+
+     <!-- swiper css link -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+     <!-- font awesome link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+     <!-- lightGallery CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery/css/lightgallery.min.css" />
+
+     <!-- lightGallery JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/lightgallery/js/lightgallery.min.js"></script>
+
+     <!-- lightGallery zoom plugin -->
+     <script src="https://cdn.jsdelivr.net/npm/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+
+        <title>SCHOOL-WEBSITE</title>
+    </head>
+    <body>
+
+        <!-- begin header section-->
+    <header class="header">
+        <a href="#" class="logo">
+            <i class="fas fa-bus"></i> School Name
+        </a>
+
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="home.html">Home</a>
+            <div class="dropdown">
+                <a href="gallery.html">Gallery <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="gallery.html#event">Event</a>
+                    <a href="gallery.html#sports-day">Sports Day</a>
+                </div> 
+            </div>    
+            <div class="dropdown">
+                <a href="about.html">About <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="about.html#school-name">Mission</a>
+                    <a href="about.html#mission">Vision</a>
+                    <a href="about.html#our-teachers">Teachers</a>
+                    <a href="about.html#student-review">Reviews</a>
+                </div>
+            </div>
+            <a href="courses.html">Courses</a>
+            <a href="contact.html">Contact</a>
+            <div class="dropdown">
+              <a href="admission.html">Admission <i class="fa fa-caret-down"></i></a>
+              <div class="dropdown-content">
+                <a href="admissionform.html">Admission Form</a>
+              </div> 
+          </nav>
+
+        <div class="icons">
+            <div id="account-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    </header>
+
+    <!-- start account-form section -->
+    <div class="account-form">
+
+        <div id="close-form" class="fas fa-times"></div>
+
+        <div class="buttons">
+            <span class="btn active login-btn">Login</span>
+            <span class="btn register-btn">Register</span>
+        </div>
+        <form class="login-form active" action="">
+            <h3>Login now</h3>
+            <input type="email" placeholder="Enter your email" class="box">
+            <input type="password" placeholder="Enter your password" class="box">
+            <div class="flex">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">Remember me</label>
+                <a href="#">Forgot password</a>
+            </div>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+        <form class="register-form" action="">
+            <h3>register now</h3>
+            <input type="email" placeholder="Enter your email" class="box">
+            <input type="password" placeholder="Enter your password" class="box">
+            <input type="password" placeholder="Confirm your password" class="box">
+            <input type="submit" value="Register now" class="btn">
+        </form>
+    </div> 
+    <!-- end sccount-form section -->
+
+    <section class="heading-link">
+
+        <h3>Gallery</h3>
+        <p><a href="home.html">Home</a> / Gallery</p>
+
+    </section>
+
+
+    <!-- start of home section -->
+    <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="slide-content">
+                <img src="images/home-slide-1.jpg" alt="Image 1" />
+                <div class="slide-overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 30px; font-weight: bold; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); width: 100%; text-align: center;">
+                
+                </div>
+            </div>
+        </div>
+        
+      <div class="swiper-slide"><img src="images/home-slide-2.jpg" alt="Image 2" /></div>
+      <div class="swiper-slide"><img src="images/home-slide-3.jpg" alt="Image 3" /></div>
+      <div class="swiper-slide"><img src="images/home-slide-2.jpg" alt="Image 1" /></div>
+      <!-- Add more swiper-slide divs here for additional images -->
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+           
+    </div>
+</section>
+
+    <!-- end of home section -->
+
+    <section class="heading-link">
+
+        <h3>Gallery</h3>
+        <p><a href="gallery.html">Gallery</a> / Event</p>
+
+    </section>
+
+    <div id="event">
+        <a href="images/classmates-holding-folders.jpg" target="_blank">
+            <img src="images/classmates-holding-folders.jpg" class="rounded float-start" alt="..." style="width: 450px; height: auto; margin-left: 30px;">
+        </a>
+        <a href="images/classmates-holding-folders.jpg" target="_blank">
+            <img src="images/classmates-holding-folders.jpg" class="rounded float-end" alt="..." style="width: 450px; height: auto; margin-left: 30px;">
+        </a>
+        <a href="images/classmates-holding-folders.jpg" target="_blank">
+            <img src="images/classmates-holding-folders.jpg" class="rounded float-start" alt="..." style="width: 450px; height: auto; margin-left: 40px;">
+        </a>
+    
+        <a href="images/front-view-kids-cheating-school.jpg" target="_blank">
+            <img src="images/front-view-kids-cheating-school.jpg" class="img-fluid" alt="..." style="height: 400px; width: 700px; margin-left: 30px;">
+        </a>
+        <a href="images/front-view-kids-cheating-school.jpg" target="_blank">
+            <img src="images/front-view-kids-cheating-school.jpg" class="img-fluid" alt="..." style="height: 400px; width: 650px; margin-left: 70px;">
+        </a>
+    </div>
+    
+
+    <section class="heading-link">
+
+        <h3>Gallery</h3>
+        <p><a href="gallery.html">Gallery</a> / Sports Day</p>
+
+    </section>
+
+    <div id="sports-day">
+      <a href="images/school vertical.webp" target="_blank">
+           <img src="images/school vertical.webp" class="rounded float-start" alt="..." style="width: 450px; height: auto; margin-left: 30px;">
+      </a>
+
+        <a href="images/school vertical.webp" target="_blank">
+          <img src="images/school vertical.webp" class="rounded float-start" alt="..." style="width: 450px; height: auto; margin-left: 30px;">
+        </a>
+
+        <a href="images/school vertical.webp" target="_blank">
+            <img src="images/school vertical.webp" class="rounded float-start" alt="..." style="width: 450px; height: auto; margin-left: 30px;">
+       </a>
+    </div>  
+   
+
+
+       <!-- start of footer section -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-lightbulb"> School Name </i></h3>
+                <p>JK Tech Solutions, No.10 Vigneshwar Appartaments,Periyar Road - Chennai</p>
+                <div class="share">
+                    <a href="https://web.whatsapp.com/" class="fab fa-whatsapp"></a>
+                    <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                    <a href="https://twitter.com/x" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/?hl=en" class="fab fa-instagram"></a>
+                    <a href="https://www.linkedin.com/login" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="home.html" class="link">Home</a>
+                <a href="about.html" class="link">About</a>
+                <a href="courses.html" class="link">Courses</a>
+                <a href="contact.html" class="link">Contact</a>
+                <a href="admission.html" class="link">Admission</a>
+            </div>
+
+            <div class="box">
+                <h3>useful links</h3>
+                <a href="#" class="link">Help Desk</a>
+                <a href="#" class="link">FAQs</a>
+                <a href="#" class="link">Send Feedback</a>
+                <a href="#" class="link">Privacy Policy</a>
+            </div>
+
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter</p>
+                <form action="">
+                    <input type="email" name="" placeholder="Enter your Email" id="" class="email">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+            </div>
+        </div>
+
+        <div class="credit">all rights reserved</div>
+    </section>
+      <!-- end of footer section -->
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="galleryjs/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="galleryjs/main.js"></script>
+
+        <!-- js file link --> 
+       <script src="js/script.js"></script>
+
+       <script>
+         // Initialize lightGallery
+         lightGallery(document.querySelector('.gallery'), {
+            plugins: [lgZoom], // Use the zoom plugin
+            speed: 500,
+         });
+        </script>
+    
+    </body>
+</html>

@@ -59,8 +59,6 @@
         </div>
         
     </header>
-
-
     <!-- start account-form section -->
     <div class="account-form">
 
@@ -70,8 +68,7 @@
             <span class="btn active login-btn">Login</span>
             <span class="btn register-btn">Register</span>
         </div>
-     <!-- Updated form with action and method attributes for backend integration -->
-     <form class="login-form active" action="http://localhost:3000/login" method="post">
+        <form class="login-form active" action="">
             <h3>Login now</h3>
             <input type="email" placeholder="Enter your email" class="box">
             <input type="password" placeholder="Enter your password" class="box">
@@ -83,7 +80,7 @@
             <input type="submit" value="login now" class="btn">
         </form>
 
-     <form class="register-form" action="http://localhost:3000/register" method="post">
+        <form class="register-form" action="">
             <h3>register now</h3>
             <input type="email" placeholder="Enter your email" class="box">
             <input type="password" placeholder="Enter your password" class="box">
@@ -91,44 +88,6 @@
             <input type="submit" value="Register now" class="btn">
         </form>
     </div> 
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const loginForm = document.querySelector(".login-form");
-        
-            loginForm.addEventListener("submit", function(e) {
-                e.preventDefault(); // Prevent default form submission
-        
-                const formData = new FormData(loginForm);
-                const data = {};
-                formData.forEach((value, key) => {data[key] = value;});
-                
-                // Use fetch to send the data to your server
-                fetch("http://localhost:3000/login", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(data),
-                })
-                .then(response => response.json()) // Assuming the server responds with JSON
-                .then(data => {
-                    if(data.success) {
-                        // Assuming your server response contains a field indicating success
-                        // Now, update the webpage to show the profile or a success message
-                        document.querySelector(".account-form").innerHTML = `<p>Welcome, ${data.email}!</p>`; // Customize as needed
-                    } else {
-                        // Handle login failure (e.g., show an error message)
-                        alert("Login failed: " + data.message); // Customize as needed
-                    }
-                })
-                .catch(error => {
-                    console.error("Error:", error);
-                });
-            });
-        });
-        </script>
-        
     <!-- end sccount-form section -->
     <!-- end header section-->
 

@@ -139,20 +139,21 @@
         </div>
 
         <div class="row" id="help-desk">   
-            <form action="">
+            <form action="https://api.web3forms.com/submit" method="POST">
                 <h3>Send us a message</h3>
-                <input type="text" placeholder="name" class="box">
-                <input type="email" placeholder="email" class="box">
-                <input type="number" placeholder="phone" class="box">
-                <textarea name="" class="box" placeholder="message" cols="30" rows="10"></textarea>
+                <input type="hidden" name="access_key" value="9cdde94c-f820-4a8a-aa41-80c4a833e4ba">
+                <input type="text" placeholder="Your Name" name="name" class="box contact-inputs" required>
+                <input type="email" placeholder="Your Email" name="email" class="box contact-inputs" required>
+                <input type="number" placeholder="Your Number" name="phone" class="box contact-inputs" required>
+                <textarea name="message" class="box contact-inputs" placeholder="Your Message" cols="30" rows="10" required></textarea>
                 <input type="submit" value="send message" class="btn">
             </form>
-
+        
             <div class="image">
                 <img src="images/Contact us.gif" alt="">
             </div>
-
         </div>
+        
 
     </section>
 

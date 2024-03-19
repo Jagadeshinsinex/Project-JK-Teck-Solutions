@@ -23,7 +23,7 @@ $result = $stmt->get_result();
 
 if ($user = $result->fetch_assoc()) {
     if ($password == $user['password']) {
-        $_SESSION['user_email'] = $email; /
+        $_SESSION['user_email'] = $email; 
         echo "Login successful.";
         header("Location: dashboard.php");
         exit();
